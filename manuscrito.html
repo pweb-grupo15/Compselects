@@ -41,12 +41,12 @@
                         <li class="nav-item">
                            <a class="nav-link" href="autores.html">Autores</a>
                         </li>
-                        <li class="nav-item active">
+                        <li class="nav-item">
                            <a class="nav-link" href="contact.html">Contato</a>
                         </li>
-                        <li class="nav-item">
-                           <a class="nav-link" href="manuscrito.html">Manuscrito</a>
-                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="manuscrito.html">Manuscrito</a>
+                         </li>
                         <li class="nav-item">
                            <a class="nav-link" href="#">
                               <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 456.029 456.029" style="enable-background:new 0 0 456.029 456.029;" xml:space="preserve">
@@ -89,7 +89,7 @@
             <div class="row">
                <div class="col-md-12">
                   <div class="full">
-                     <h3>Entre em contato</h3>
+                     <h3>Envie seu manuscrito</h3>
                   </div>
                </div>
             </div>
@@ -97,7 +97,7 @@
       </section>
       <section class="why_section layout_padding">
          <div class="container">
-         
+            <p>Na CompSelects, seguimos uma política editorial rigorosa. Nosso processo de revisão é realizado por especialistas e pesquisadores renomados. Além disso, respeitamos os direitos autorais de nossos autores e garantimos a ética em todas as etapas de publicação.</p>
             <div class="row">
                <div class="col-lg-8 offset-lg-2">
                   <div class="full">
@@ -105,8 +105,13 @@
                         <fieldset>
                            <input type="text" placeholder="Nome completo" name="name" required />
                            <input type="email" placeholder="email" name="email" required />
-                           <input type="text" placeholder="Assunto" name="subject" required />
-                           <textarea placeholder="Mensagem" required></textarea>
+                           <input type="text" placeholder="Título" name="subject" required />
+
+                        <div id="drop-area">
+                            <p>Arrasta um arquivo aqui ou <span id="file-select">clique pra escolher</span></p>
+                            <input type="file" id="file-input" hidden />
+                            <div id="preview"></div>
+                        </div>
                            <input type="submit" value="Enviar" />
                         </fieldset>
                      </form>
@@ -127,7 +132,7 @@
                         <a href="">
                         <i class="fa fa-map-marker" aria-hidden="true"></i>
                         <span>
-                        Localização
+                        CompSelects
                         </span>
                         </a>
                         <a href="">
@@ -193,5 +198,6 @@
       <script src="js/popper.min.js"></script>
       <script src="js/bootstrap.js"></script>
       <script src="js/custom.js"></script>
+      <script src="js/dragdrop.js"></script>
    </body>
 </html>
